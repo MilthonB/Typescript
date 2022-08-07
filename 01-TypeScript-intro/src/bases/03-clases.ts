@@ -1,6 +1,8 @@
 
 // export para ser módulo
 
+import axios from "axios";
+
 // forma de construir clases de forma explicita
 export class Pokemon {
 
@@ -44,7 +46,17 @@ export class Pokemon {
          
     }
 
+    // Métodos async await 
+    async getMoves(){
 
+        const resp = await axios('https://pokeapi.co/api/v2/pokemon/4')
+        
+        console.log(resp.data);
+        
+
+        return resp.data
+
+    }
 
 
 } 
@@ -53,9 +65,9 @@ export const charmander = new Pokemon(4,'Sharmander');
 
 
 // y pudes acceder a esa propiedad desde la instancia
-console.log(charmander.imgaURL);
+charmander.getMoves();
 
-charmander.scream()
-charmander.speak()
+// charmander.scream()
+// charmander.speak()
 //charmander.id = 10
 //charmander.name = 'Mew'
