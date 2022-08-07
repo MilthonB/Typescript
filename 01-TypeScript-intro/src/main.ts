@@ -3,7 +3,9 @@ import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
 import { name, edad } from "./bases/01-types";
 // import { pokemon, pokemonIds } from './bases/02-object';
-import { charmander } from './bases/04-injection';
+// import { charmander } from './bases/04-injection';
+// import { charmander } from './bases/05-decorators';
+import { charmander } from './bases/06-decorators2';
 // import { charmander } from './bases/03-clases';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
