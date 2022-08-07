@@ -2,7 +2,7 @@
 // export para ser módulo
 
 import axios from "axios";
-import { PokeapiResponse } from "../interfaces/pokeapi-response.interfaces";
+import { Move, PokeapiResponse } from "../interfaces/pokeapi-response.interfaces";
 
 // forma de construir clases de forma explicita
 export class Pokemon {
@@ -47,8 +47,9 @@ export class Pokemon {
          
     }
 
-    // Métodos async await 
-    async getMoves(){
+    // Métodos async await
+    // import ar moves de las interfaces 
+    async getMoves(): Promise<Move[]>{
 
         // Deconstruccion de data 
         const { data } = await axios.get<PokeapiResponse>('https://pokeapi.co/api/v2/pokemon/4')
