@@ -2,8 +2,9 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
 import { name, edad } from "./bases/01-types";
-import { pokemon, pokemonIds } from './bases/02-object';
-import { charmander } from './bases/03-clases';
+// import { pokemon, pokemonIds } from './bases/02-object';
+import { charmander } from './bases/04-injection';
+// import { charmander } from './bases/03-clases';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
