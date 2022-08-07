@@ -18,9 +18,36 @@ export const esvalido: boolean = true
 
 export const edad: number = 165
 
+export const valorX: string | undefined = 'Walter'
+export const valory: string | number = 'Walter'
 
-// No colocar codigo que se ejecute cuando sea leeido  
 
+
+// No colocar codigo que se ejecute cuando sea leeido 
+
+
+
+// Type safety
+//  Analizara los datos que se asignen a la variabl y determinara si es el tipo dato
+// o no y si es variable o constante y si no coinciden entonces marcara error 
+// 
+
+// El ; es arbitario
+
+
+// String Multilineas 
+export const templateString = `
+    Hola mundo
+    "Comillas "
+    'simples'
+    iyectar valores ${name}
+    expresiones ${ 1+1 }
+    numeros ${edad}
+    boolean ${esvalido}
+
+`
+
+console.log(templateString)
 
 
 
