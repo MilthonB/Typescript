@@ -5,9 +5,9 @@ export class PokeApiAdapter{
 
     private readonly axios = axios;
     
-    async get(url:string){
+    async get<T>(url:string): Promise<T>{
         // Peticion get
-        const { data } = await this.axios.get(url);
+        const { data } = await this.axios.get<T>(url);
         return data
     }
 
