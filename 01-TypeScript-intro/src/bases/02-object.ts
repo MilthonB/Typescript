@@ -20,23 +20,30 @@ console.log(pokemonIds);
 // Ese problema se resuelve con una interface
 // y el objeto termina de siendo de tipo pokemon que es una 
 // interface y se asignan sus propiedades 
-export const pokemon: pokemon = {
+export const pokemon: Pokemon = {
     id: 15,
     nombre: 'Sharmander'
 }
 
 
-interface pokemon {
+interface Pokemon {
     id: number
     nombre: string
     edad?: number // Puede venir o no este valor en el objecto 
 }
 
-export const charmander: pokemon =  {
+export const charmander: Pokemon =  {
     id: 0,
     nombre: ""
 }
 
+// Tipos de arreglos
+export const pokemons: Pokemon[] = []
 
+//pokemons.push(1,'String', charmander)
+
+pokemons.push(charmander, pokemon)
+
+console.log(pokemons)
 
 
