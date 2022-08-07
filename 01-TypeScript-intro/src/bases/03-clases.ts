@@ -56,7 +56,6 @@ export class Pokemon {
         
         console.log('Estos son los datos ',data.moves);
         
-
         return data.moves
 
     }
